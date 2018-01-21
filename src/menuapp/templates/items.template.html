@@ -1,0 +1,8 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a ui-sref="home">Home</a></li>
+  <li class="breadcrumb-item"><a ui-sref="categories">Categories</a></li>
+  <li class="breadcrumb-item" ui-sref-active="active"><a ui-sref="items">Category: {{ItemsControl.shortName}}</a></li>
+</ol>
+<h3>{{ItemsControl.name}}</h3>
+<h5>The items from this category are:</h5>
+<items-list items="ItemsControl.items"></items-list>
