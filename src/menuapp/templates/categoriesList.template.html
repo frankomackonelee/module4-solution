@@ -1,5 +1,9 @@
-<ul style="list-style: none;">
-  <li ng-repeat='item in $ctrl.items'>
-    <button class="btn-default btn-block"><span style="float:left;">{{item.id}}: </span><a ui-sref="items({short_name:item.short_name})">{{ item.name }}</a></button>
-  </li>
-<ul>
+<div class="container">
+  <div class="jumbotron">
+    <a ui-sref="items({short_name:item.short_name})" ng-repeat='item in $ctrl.items' >
+      <button class="btn btn-default" style="margin:5px;">
+        <span style="float:left;">{{item.id}}: </span>{{ item.name }}
+      </button>
+    </a>
+  </div>
+</div>

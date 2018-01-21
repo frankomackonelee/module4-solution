@@ -1,6 +1,5 @@
-<ul>
-  <li ng-repeat="item in $ctrl.items">
-    <div><h5>{{ item.name }}</h5></div>
-    <div>{{ item.description }}</div>
-  </li>
-</ul>
+
+<div class="panel panel-default" ng-repeat="item in $ctrl.items">
+  <div class="panel-heading">{{ item.name }}<span style="float:right;">{{item.price_large | currency}}</span></div>
+  <div class="panel-body">{{ item.description }}</div>
+</div>
